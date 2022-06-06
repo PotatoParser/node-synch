@@ -1,0 +1,44 @@
+{
+  "name": "node-synch",
+  "version": "1.0.0",
+  "description": "Synchronization Primitives in JavaScript",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --coverage --verbose",
+    "watch": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --coverage --verbose --watchAll",
+    "test:ci": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --ci --coverage --verbose && node ./test/lib/coverage.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "type": "module",
+  "author": "Wilson Nguyen",
+  "license": "MIT",
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^8.16.0",
+    "jest": "^28.1.0",
+    "pre-commit": "^1.2.2"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "lib/*.js"
+    ],
+    "coverageReporters": ["json-summary", "lcov", "text"]
+  },
+  "keywords": [
+    "synchronization",
+    "semaphore",
+    "lock",
+    "thread",
+    "multithreading",
+    "worker",
+    "atomic",
+    "shared"
+  ],
+  "homepage": "https://github.com/PotatoParser/node-synch#readme",
+  "repository": "github:PotatoParser/node-synch"
+}
