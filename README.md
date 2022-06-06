@@ -1,6 +1,6 @@
 # node-synch
 
-[![Build](https://img.shields.io/github/workflow/status/PotatoParser/node-synch/main.yml)](https://github.com/PotatoParser/node-synch/actions/workflows/main.yml) [![Coverage](https://img.shields.io/endpoint?url=https%3A%2F%2Fpotatoparser.github.io%2Fnode-synch%2Fcoverage.json)](https://potatoparser.github.io/node-synch/)
+[![Build](https://img.shields.io/github/workflow/status/PotatoParser/node-synch/build%20&%20publish)](https://github.com/PotatoParser/node-synch/actions/workflows/main.yml) [![Coverage](https://img.shields.io/endpoint?url=https%3A%2F%2Fpotatoparser.github.io%2Fnode-synch%2Fcoverage.json)](https://potatoparser.github.io/node-synch/)
 
 Synchronization Primitives in JavaScript
 
